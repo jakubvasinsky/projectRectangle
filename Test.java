@@ -1,5 +1,6 @@
 package sk.itsovy.vasinsky.other;
 
+import java.util.Date;
 import java.util.Random;
 import java.util.Scanner;
 
@@ -597,10 +598,15 @@ public class Test {
 //du - prerobit tento program tak aby tam bola aspon 1 cislica aspon 1 velke a aspon 1 male pismeno
 
 public void priklad() {
-
     Scanner scanner = new Scanner(System.in);
+    System.out.println("ENTER USERNAME");
+    String userName = scanner.nextLine();
+    System.out.println("Hi "+userName+" Welcome to my testing project!");
     Random rnd = new Random();
+    Date date= new Date();
+    long starttime = System.currentTimeMillis()/1000;
 
+    System.out.println(starttime);
     for (int i = 1; i <= 10; i++) {
 
         int a = rnd.nextInt(90) + 10;
@@ -614,7 +620,7 @@ public void priklad() {
         switch (symbol) {
             case 0:
 
-                System.out.println("Problem" + i);
+                System.out.println("problem"+i);
                 System.out.println(a + " + " + b + " = ");
                 r = a + b;
                 break;
@@ -647,7 +653,10 @@ public void priklad() {
         }
 
     }
-
+date.getTime();
+    long endtime = System.currentTimeMillis()/1000;
+    long time= endtime-starttime;
+    System.out.println(time);
 
 }
 
