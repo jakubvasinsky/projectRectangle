@@ -1,5 +1,6 @@
 package sk.itsovy.vasinsky.other;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class Test {
@@ -356,153 +357,299 @@ public class Test {
             }
         }
     }
-public void monthsswitch() {
-    Scanner Months = new Scanner(System.in);
-    System.out.println("Month number");
-    int m = Months.nextInt();
-    switch (m) {
 
+    public void monthsswitch() {
+        Scanner Months = new Scanner(System.in);
+        System.out.println("Month number");
+        int m = Months.nextInt();
+        switch (m) {
 
-        case 1:
-            System.out.println("January");
-            break;
-
-        case 2:
-            System.out.println("February");
-            break;
-
-        case 3:
-            System.out.println("March");
-            break;
-
-        case 4:
-            System.out.println("April");
-            break;
-
-        case 5:
-            System.out.println("May");
-            break;
-
-        case 6:
-            System.out.println("June");
-            break;
-
-        case 7:
-            System.out.println("July");
-            break;
-
-        case 8:
-            System.out.println("August");
-            break;
-
-        case 9:
-            System.out.println("September");
-            break;
-
-        case 10:
-            System.out.println("October");
-            break;
-
-        case 11:
-            System.out.println("November");
-            break;
-
-        case 12:
-            System.out.println("December");
-            break;
-
-        default:
-            System.out.println("Error");
-
-
-    }
-
-    switch (m) {
-
-        case 12:
-        case 1:
-        case 2:
-            System.out.println("winter"); break;
-            case 3:
-
-        case 4:
-
-        case 5:
-            System.out.println("spring");break;
-
-        case 6:
-        case 7:
-        case 8:
-            System.out.println("summer");break;
-
-        case 9:
-        case 10:
-        case 11:
-            System.out.println("Fall");break;
-        default:
-            System.out.println("Error");
-    }
-}
-
-public void znamky(){
-
-    Scanner znamky = new Scanner(System.in);
-    System.out.println("Zadaj znamku");
-    int m = znamky.nextInt();
-
-        switch (m){
 
             case 1:
-                System.out.println("vyborny");break;
-            case 2:  System.out.println("chvalitebny");break;
-            case 3:  System.out.println("dobry");break;
-            case 4:  System.out.println("dostatocny");break;
-            case 5:  System.out.println("nedostatocny");break;
+                System.out.println("January");
+                break;
+
+            case 2:
+                System.out.println("February");
+                break;
+
+            case 3:
+                System.out.println("March");
+                break;
+
+            case 4:
+                System.out.println("April");
+                break;
+
+            case 5:
+                System.out.println("May");
+                break;
+
+            case 6:
+                System.out.println("June");
+                break;
+
+            case 7:
+                System.out.println("July");
+                break;
+
+            case 8:
+                System.out.println("August");
+                break;
+
+            case 9:
+                System.out.println("September");
+                break;
+
+            case 10:
+                System.out.println("October");
+                break;
+
+            case 11:
+                System.out.println("November");
+                break;
+
+            case 12:
+                System.out.println("December");
+                break;
+
+            default:
+                System.out.println("Error");
+
+
+        }
+
+        switch (m) {
+
+            case 12:
+            case 1:
+            case 2:
+                System.out.println("winter");
+                break;
+            case 3:
+
+            case 4:
+
+            case 5:
+                System.out.println("spring");
+                break;
+
+            case 6:
+            case 7:
+            case 8:
+                System.out.println("summer");
+                break;
+
+            case 9:
+            case 10:
+            case 11:
+                System.out.println("Fall");
+                break;
             default:
                 System.out.println("Error");
         }
-}
+    }
 
-public void kvadraticka(){
-    System.out.println("Hello this is a program for solving math problems");
-    Scanner myObj = new Scanner(System.in);
-    double D=0;
-    double x=0;
-    double x1=0;
-    double x2=0;
-    double a=0;
-    double b=0;
-    double c=0;
+    public void znamky() {
 
-    System.out.println("Enter a:");
-    a = myObj.nextInt();
-    System.out.println("Enter b:");
-    b = myObj.nextInt();
-    System.out.println("Enter c:");
-    c = myObj.nextInt();
+        Scanner znamky = new Scanner(System.in);
+        System.out.println("Zadaj znamku");
+        int m = znamky.nextInt();
 
-    if (a==0){
-        System.out.println("Nie je to kvadraticka rovnica");
-    }else{
-        D= Math.pow(b,2)-4*a*c;
-        System.out.println("D=" + D);
-        if (D>0){
-            x1=((-b)+Math.sqrt(D)/2*a);
-            x2=((-b)-Math.sqrt(D)/2*a);
-            System.out.println("dve riesenia: x1=" + x1 + " x2=" + x2 );
-        }
-        if (D==0){
-            x1=(-b)/(2*a);
-            System.out.println("Jedno riesenie: x=" + x );
-        }
-        if (D<0){
-            System.out.println("Nema riesenie");
+        switch (m) {
+
+            case 1:
+                System.out.println("vyborny");
+                break;
+            case 2:
+                System.out.println("chvalitebny");
+                break;
+            case 3:
+                System.out.println("dobry");
+                break;
+            case 4:
+                System.out.println("dostatocny");
+                break;
+            case 5:
+                System.out.println("nedostatocny");
+                break;
+            default:
+                System.out.println("Error");
         }
     }
+
+    public void kvadraticka() {
+        System.out.println("Hello this is a program for solving math problems");
+        Scanner myObj = new Scanner(System.in);
+        double D = 0;
+        double x = 0;
+        double x1 = 0;
+        double x2 = 0;
+        double a = 0;
+        double b = 0;
+        double c = 0;
+
+        System.out.println("Enter a:");
+        a = myObj.nextInt();
+        System.out.println("Enter b:");
+        b = myObj.nextInt();
+        System.out.println("Enter c:");
+        c = myObj.nextInt();
+
+        if (a == 0) {
+            System.out.println("Nie je to kvadraticka rovnica");
+        } else {
+            D = Math.pow(b, 2) - 4 * a * c;
+            System.out.println("D=" + D);
+            if (D > 0) {
+                x1 = ((-b) + Math.sqrt(D) / (2 * a));
+                x2 = ((-b) - Math.sqrt(D) / (2 * a));
+                System.out.println("dve riesenia: x1=" + x1 + " x2=" + x2);
+            }
+            if (D == 0) {
+                x1 = (-b) / (2 * a);
+                System.out.println("Jedno riesenie: x=" + x);
+            }
+            if (D < 0) {
+                System.out.println("Nema riesenie");
+            }
+        }
+    }
+
+    public void random() {
+        Random rnd = new Random();
+        int a, b, c;
+
+        do {
+            a = rnd.nextInt(6) + 1;
+            b = rnd.nextInt(6) + 1;
+            c = rnd.nextInt(6) + 1;
+
+        } while ((a == b) || (b == c) || (a == c));
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+    }
+
+
+    public void random1() {
+        Random rnd = new Random();
+        int a = -10;
+        int b = 10;
+        int x;
+
+        x = rnd.nextInt((b - a + 1) + a); //<-10;10> (b - a + 1) + a;  10 - (-10) = 20 +1= { 21 + -10}
+        System.out.println(x);
+    }
+
+
+    public void randomtrojcifcisla() {
+        Random rnd = new Random();
+
+        int x;
+        x = 11 * (rnd.nextInt(81) + 10);
+        System.out.println(x);
+    }
+
+    public void nahodneprvocislo4cif() {
+        Random rnd = new Random();
+        int pocitadlo = 0;
+        int i = 2;
+        int u11;
+        do {
+            u11 = (rnd.nextInt(9000) + 1000);
+
+            while (i < u11) {
+                if (u11 % i == 0) {
+                    pocitadlo++;
+                }
+                i++;
+            }
+        }while (pocitadlo==0);
+    System.out.println("nahodne prvocislo od 1000 do 9000: "+u11);
 }
 
+ public void password() {   //heslo len z velkych cisel abecedy
+     Random rnd = new Random();
+
+     String password = "";
+     for (int i = 0; i < 6; i++) {
+         int num = rnd.nextInt(26) + 65;
+         char letter = (char) num;
+         password = password + "" + letter;
+     }
+     System.out.println(password);
+ }
+  public void password2(){
+        StringBuilder password= new StringBuilder();
+      Random rnd = new Random();
+        for(int i=0;i<10;i++){
+            int num=rnd.nextInt(75)+48;
+                if(num>57 && num<65 || num>90 && num<97){
+                    i--;
+                    continue;
+            }
+               char letter= (char)num;
+             password.append(letter);
+        }
+      System.out.println(password);
+}
+//du - prerobit tento program tak aby tam bola aspon 1 cislica aspon 1 velke a aspon 1 male pismeno
+
+public void priklad() {
+
+    Scanner scanner = new Scanner(System.in);
+    Random rnd = new Random();
+
+    for (int i = 1; i <= 10; i++) {
+
+        int a = rnd.nextInt(90) + 10;
+        int b = rnd.nextInt(90) + 10;
+        int r = 0;
+        int input = 0;
+
+        int num = 0;
+        int symbol = rnd.nextInt(4);
+
+        switch (symbol) {
+            case 0:
+
+                System.out.println("Problem" + i);
+                System.out.println(a + " + " + b + " = ");
+                r = a + b;
+                break;
 
 
+            case 1:
+                System.out.println(i);
+                System.out.println(a + " + " + b + " = ");
+                r = a + b;
+                break;
+            case 2:
+                System.out.println(i);
+                System.out.println(a + " - " + b + " = ");
+                r = a - b;
+                break;
+
+
+            case 3:
+                System.out.println( i);
+                System.out.println(a + " * " + b + " = ");
+                r = a * b;
+                break;
+        }
+        input = scanner.nextInt();
+
+        if (input == r) {
+            System.out.println("Correct");
+        } else {
+            System.out.println("Incorrect. Correct answer is " + r);
+        }
+
+    }
+
+
+}
 
 
 
